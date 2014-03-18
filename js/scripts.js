@@ -17,10 +17,16 @@ $('button').on('click', function() {
       var temp = weather.temp;
       // Get & store city
       var city = weather.city;
+      var currently = weather.curently;
+      var code = '<img src=' + weather.image + '>';
+      var temp = weather.temp + '&deg;' + weather.units.temp;
       
       // Output to hooks in HTML
-      $('.temp').text(temp);
+      $('.code').html(code);
+      $('.temp').html(temp);
       $('.city').text(city);
+      $('.currently').html(currently);
+      $('.humidity').html(humidity);
 
       // See console for all properties of object
       console.log(weather);
@@ -65,6 +71,8 @@ $(document).ready(function(){
       $('.tomHi').html(tomHi);
       $('.tomLo').html(tomLo);
       $('.cityAndState').html(cityAndState);
+      $('.humidity').text(humidity);
+
 
     },
     
