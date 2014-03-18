@@ -21,11 +21,11 @@ $('button').on('click', function() {
       var code = '<img src=' + weather.image + '>';
       var temp = weather.temp + '&deg;' + weather.units.temp;
       var humidity = 'Humidity' + ' '  + weather.humidity;
-      var sunset = 'Sunset' + ' ' + weather.sunset;
+      var sunset =  'Sunset' + ' ' + weather.sunset;
       var sunrise = 'Sunrise' + ' ' + weather.sunrise;
       var high = 'High' + ' ' +weather.high + '&deg;' + weather.units.temp;
       var low = 'Low' + ' ' + weather.low + '&deg;' + weather.units.temp;
-      
+      var weatherCam = '<img src="http://images.wsdot.wa.gov/spokane/i90/I-90-Appleway.jpg">';
       // Output to hooks in HTML
       $('.code').html(code);
       $('.temp').html(temp);
@@ -36,6 +36,7 @@ $('button').on('click', function() {
       $('.sunrise').html(sunrise);
       $('.high').html(high);
       $('.low').html(low);
+      $('.weatherCam').html(weatherCam);
 
    
 
@@ -87,6 +88,7 @@ $(document).ready(function(){
       $('.sunrise').html(sunrise);
       $('.high').html(high);
       $('.low').html(low);
+      $('.weatherCam').html(weatherCam);
 
 
 
