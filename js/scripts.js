@@ -20,10 +20,11 @@ $('button').on('click', function() {
       var currently = weather.curently;
       var code = '<img src=' + weather.image + '>';
       var temp = weather.temp + '&deg;' + weather.units.temp;
-      var humidity = weather.humidity;
-      var sunset = weather.sunset;
-      var sunrise = weather.sunrise;
-     
+      var humidity = 'Humidity' + ' '  + weather.humidity;
+      var sunset = 'Sunset' + ' ' + weather.sunset;
+      var sunrise = 'Sunrise' + ' ' + weather.sunrise;
+      var high = 'High' + ' ' +weather.high + '&deg;' + weather.units.temp;
+      var low = 'Low' + ' ' + weather.low + '&deg;' + weather.units.temp;
       
       // Output to hooks in HTML
       $('.code').html(code);
@@ -33,6 +34,8 @@ $('button').on('click', function() {
       $('.humidity').html(humidity);
       $('.sunset').html(sunset);
       $('.sunrise').html(sunrise);
+      $('.high').html(high);
+      $('.low').html(low);
 
    
 
@@ -59,7 +62,7 @@ $(document).ready(function(){
 
   $.simpleWeather({
     
-    location: '99216',
+    location: '#',
     
     success: function(weather) {
       
@@ -82,6 +85,8 @@ $(document).ready(function(){
       $('.humidity').text(humidity);
       $('.sunset').html(sunset);
       $('.sunrise').html(sunrise);
+      $('.high').html(high);
+      $('.low').html(low);
 
 
 
