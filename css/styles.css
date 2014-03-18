@@ -8,6 +8,15 @@ li{
 }
 
 button{
-	margin:25%;
+	margin:5%;
+	background-color: black;
 	
+}
+
+.wi-sunset{
+	color:orange;
+}
+
+#getWeather{
+	margin-top:20px;
 }
