@@ -20,6 +20,10 @@ $('button').on('click', function() {
       var currently = weather.curently;
       var code = '<img src=' + weather.image + '>';
       var temp = weather.temp + '&deg;' + weather.units.temp;
+      var humidity = weather.humidity;
+      var sunset = weather.sunset;
+      var sunrise = weather.sunrise;
+     
       
       // Output to hooks in HTML
       $('.code').html(code);
@@ -27,6 +31,9 @@ $('button').on('click', function() {
       $('.city').text(city);
       $('.currently').html(currently);
       $('.humidity').html(humidity);
+      $('.sunset').html(sunset);
+      $('.sunrise').html(sunrise);
+   
 
       // See console for all properties of object
       console.log(weather);
@@ -72,6 +79,10 @@ $(document).ready(function(){
       $('.tomLo').html(tomLo);
       $('.cityAndState').html(cityAndState);
       $('.humidity').text(humidity);
+      $('.sunset').html(sunset);
+      $('.sunrise').html(sunrise);
+
+
 
 
     },
