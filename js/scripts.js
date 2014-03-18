@@ -33,6 +33,7 @@ $('button').on('click', function() {
       $('.humidity').html(humidity);
       $('.sunset').html(sunset);
       $('.sunrise').html(sunrise);
+
    
 
       // See console for all properties of object
