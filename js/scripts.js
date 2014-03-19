@@ -25,7 +25,12 @@ $('button').on('click', function() {
       var sunrise = 'Sunrise' + ' ' + weather.sunrise;
       var high = 'High' + ' ' +weather.high + '&deg;' + weather.units.temp;
       var low = 'Low' + ' ' + weather.low + '&deg;' + weather.units.temp;
-      var weatherCam = '<img src="http://images.wsdot.wa.gov/spokane/i90/I-90-Appleway.jpg">';
+      var weatherCam1 = '<img src="http://images.wsdot.wa.gov/spokane/i90/I-90-Appleway.jpg">';
+      var weatherCam2 = '<img src="http://images.wsdot.wa.gov/rweather/Medium_Spangle3.jpg">';
+      var currently =  weather.currently;
+      
+
+
       // Output to hooks in HTML
       $('.code').html(code);
       $('.temp').html(temp);
@@ -36,9 +41,27 @@ $('button').on('click', function() {
       $('.sunrise').html(sunrise);
       $('.high').html(high);
       $('.low').html(low);
-      $('.weatherCam').html(weatherCam);
+      $('.weatherCam1').html(weatherCam1);
+      $('.weatherCam2').html(weatherCam2);
+      $('.currently').html(currently);
+     
 
-   
+      if ( zipcode == '99004') {
+
+            $('.currentView').html(weatherCam2);
+
+          }
+
+
+
+      else  {
+
+            $('.currentView').html(weatherCam1);
+
+          };
+
+       
+      
 
       // See console for all properties of object
       console.log(weather);
@@ -88,7 +111,10 @@ $(document).ready(function(){
       $('.sunrise').html(sunrise);
       $('.high').html(high);
       $('.low').html(low);
-      $('.weatherCam').html(weatherCam);
+      $('.weatherCam1').html(weatherCam1);
+      $('.weatherCam2').html(weatherCam2);
+      $('.currently').html(currently);
+     
 
 
 

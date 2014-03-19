@@ -17,8 +17,25 @@ button{
 	
 }
 
-.wi-sunset{
-	color:orange;
+body{
+	background: url(http://www.pcrihome.org/blog/wp-content/uploads/2010/10/openwindow1.jpg) no-repeat, center;
+}
+
+.city,
+.temp,
+{
+	color:rgba(0,0,0,1);
+	font-size: 3em;
+}
+
+.currently{
+	color:rgba(0,0,0,1);
+	font-size: 2em;
+}
+
+.sunrise,
+.sunset{
+	font-size:1em;
 }
 
 #getWeather{
