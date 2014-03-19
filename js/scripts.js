@@ -67,8 +67,12 @@ $('button').on('click', function() {
           }
 
    else  {
-        $('.currentView').text('Enjoy Your Day');
+        $('.currentView').text('Enjoy Your Day!');
    }
+
+   $('body').removeClass('wrapper').addClass('');
+
+
       
       
 
@@ -135,7 +139,7 @@ $(document).ready(function(){
       $("#weather").html('<p>'+error+'</p>');
     }
 
-     
+
   
   });
 

@@ -12,32 +12,41 @@ li{
 }
 
 button{
-	margin:5%;
+	margin-left:25%;
 	background-color: black;
 	
+}
+
+.top{
+	text-align: center;
 }
 
 .wrapper{
 	background: url(../img/window.png) no-repeat;
 	background-position: center right-top;
+	background-size: 400px 600px;
+}
 
-	background-size: 400px 700px;
+.bg{
+  background-color: #F2F2F2;
 }
 
 .city,
-.temp,
+.cityAndState
 {
-	color:rgba(0,0,0,1);
+	color:#00163F;
 	font-size: 3em;
+	margin-left: 55%;
 }
-
+.temp,
 .currently{
-	color:rgba(0,0,0,1);
+	color:#054BA6;
 	font-size: 2em;
 }
 
 .sunrise,
 .sunset{
+	color:#F69A19;
 	font-size:1em;
 }
 
@@ -52,7 +61,8 @@ button{
 
 
 .currentView{
-	font-size: 3em;
+	font-size: 2em;
+	margin: 10%;
 }
 
 
