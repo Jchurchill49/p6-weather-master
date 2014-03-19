@@ -19,6 +19,7 @@ button{
 
 .top{
 	text-align: center;
+
 }
 
 .wrapper{
@@ -29,16 +30,18 @@ button{
 
 .bg{
   background-color: #F2F2F2;
+
 }
 
 .city,
-.cityAndState
+.cityAndState,
+.temp
 {
 	color:#00163F;
 	font-size: 3em;
-	margin-left: 55%;
+	
 }
-.temp,
+
 .currently{
 	color:#054BA6;
 	font-size: 2em;
@@ -52,6 +55,8 @@ button{
 
 #getWeather{
 	margin-top:20px;
+	margin-left: 20%;
+	width:70%;
 }
 
 .code{
@@ -63,6 +68,7 @@ button{
 .currentView{
 	font-size: 2em;
 	margin: 10%;
+	color:#F69A19;
 }
 
 
