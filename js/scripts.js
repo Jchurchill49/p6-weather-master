@@ -27,6 +27,7 @@ $('button').on('click', function() {
       var low = 'Low' + ' ' + weather.low + '&deg;' + weather.units.temp;
       var weatherCam1 = '<img src="http://images.wsdot.wa.gov/spokane/i90/I-90-Appleway.jpg">';
       var weatherCam2 = '<img src="http://images.wsdot.wa.gov/rweather/Medium_Spangle3.jpg">';
+      var weatherCam3 = '<img src="http://images.wsdot.wa.gov/nw/005vc16702.jpg">';
       var currently =  weather.currently;
       
 
@@ -43,6 +44,7 @@ $('button').on('click', function() {
       $('.low').html(low);
       $('.weatherCam1').html(weatherCam1);
       $('.weatherCam2').html(weatherCam2);
+      $('.weatherCam3').html(weatherCam3);
       $('.currently').html(currently);
      
 
@@ -52,15 +54,22 @@ $('button').on('click', function() {
 
           }
 
-
-
-      else  {
+     else if  ( zipcode == '99216'){
 
             $('.currentView').html(weatherCam1);
 
-          };
+          }
 
-       
+    else if  ( zipcode == '98040'){
+
+            $('.currentView').html(weatherCam3);
+
+          }
+
+   else  {
+        $('.currentView').text('Enjoy Your Day');
+   }
+      
       
 
       // See console for all properties of object
@@ -113,6 +122,7 @@ $(document).ready(function(){
       $('.low').html(low);
       $('.weatherCam1').html(weatherCam1);
       $('.weatherCam2').html(weatherCam2);
+      $('.weatherCam3').html(weatherCam3);
       $('.currently').html(currently);
      
 
@@ -124,6 +134,8 @@ $(document).ready(function(){
     error: function(error) {
       $("#weather").html('<p>'+error+'</p>');
     }
+
+     
   
   });
 

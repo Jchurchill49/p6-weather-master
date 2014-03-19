@@ -17,8 +17,11 @@ button{
 	
 }
 
-body{
-	background: url(http://www.pcrihome.org/blog/wp-content/uploads/2010/10/openwindow1.jpg) no-repeat, center;
+.wrapper{
+	background: url(../img/window.png) no-repeat;
+	background-position: center right-top;
+
+	background-size: 400px 700px;
 }
 
 .city,
@@ -46,3 +49,13 @@ body{
 	margin-left:20%;
 
 }
+
+
+.currentView{
+	font-size: 3em;
+}
+
+
+
+
+
