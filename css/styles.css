@@ -47,14 +47,14 @@ button{
 .currently{
 	color:#054BA6;
 	font-size: 2em;
-	margin:2%;
+	margin:1%;
 }
 
 .sunrise,
 .sunset{
 	color:#F69A19;
 	font-size:1em;
-	margin:2%;
+	margin:1%;
 }
 
 #getWeather{
