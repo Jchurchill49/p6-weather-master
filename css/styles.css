@@ -23,9 +23,9 @@ button{
 }
 
 .wrapper{
-	background: url(../img/window.png) no-repeat;
+	background: url(../img/open-window.png) no-repeat;
 	background-position: center right-top;
-	background-size: 400px 600px;
+	background-size: 400px 650px;
 }
 
 .bg{
