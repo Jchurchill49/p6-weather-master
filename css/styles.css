@@ -13,6 +13,7 @@ li{
 
 button{
 	margin-left:25%;
+	margin-right:25%;
 	background-color: black;
 	
 }
@@ -25,7 +26,7 @@ button{
 .wrapper{
 	background: url(../img/open-window.png) no-repeat;
 	background-position: center right-top;
-	background-size: 400px 650px;
+	background-size: 100%;
 }
 
 .bg{
@@ -38,29 +39,34 @@ button{
 .temp
 {
 	color:#00163F;
-	font-size: 3em;
+	font-size: 2em;
+	margin:2%;
 	
 }
 
 .currently{
 	color:#054BA6;
 	font-size: 2em;
+	margin:2%;
 }
 
 .sunrise,
 .sunset{
 	color:#F69A19;
 	font-size:1em;
+	margin:2%;
 }
 
 #getWeather{
 	margin-top:20px;
-	margin-left: 20%;
-	width:70%;
+	margin-left: 10%;
+	margin-right: 10%;
+	width:80%;
 }
 
 .code{
 	margin-left:20%;
+	margin-right:20%;
 
 }
 
