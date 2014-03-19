@@ -50,15 +50,21 @@ button{
 	margin:1%;
 }
 
+.high,
+.low,
+.humidity{
+
+	font-size:1em;
+}
 .sunrise{
 	color:#F69A19;
-	font-size:1em;
+	font-size:.75em;
 	margin-right:1%;
 
 }
 .sunset{
 	color:#F69A19;
-	font-size:1em;
+	font-size:.75em;
 	margin-left:1%;
 }
 
